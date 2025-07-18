@@ -7,6 +7,11 @@ import Jester from '../img/Jester.jpg';
 import Quex from '../img/Quex.jpg';
 import Amy from '../img/Amy.jpg';
 import Barry from '../img/Barry.jpg';
+import Berlin from '../img/Berlin.jpg';
+import Blanca from '../img/Blanca.jpg';
+import Boomer from '../img/Boomer.jpg';
+import Brava from '../img/Brava.jpg';
+
 
 interface DogTitle {
   exposicao: string;
@@ -235,8 +240,254 @@ const dogs: Dog[] = [
       ]
     }
   },
-  
-  // Add more dogs here...
+
+  {
+    id: '5',
+    name: 'BERLIM ROCCO IMPERIO NEGRO',
+    image: Berlin,
+    dados: {
+      numero: '365',
+      apelido: 'BERLIM',
+      nome: 'BERLIM ROCCO IMPERIO NEGRO',
+      rg: 'MGD/22/01094',
+      microchip: '900233000028278',
+      dataNascimento: '31/07/2022',
+      sexo: 'Macho',
+      displasia: 'HD- / ED0)',
+    },
+    titulos: [ 
+      {
+        exposicao: '-',
+        classificacao: 'CAMPEÃO',
+        juiz: '-',
+        data: '18/09/2024',
+        local: 'CBKC - BRASIL'
+      }, 
+    ],
+      pedigree: {
+      pai: 'ROCCO ROTT ARAXA',
+      mae: 'PANDORA URANO VON HOUSE BRK',
+      avosPaternos: ['BR SECURITY SPECIAL GOLIAS', 'OXANA DOCTOR MASTER BLACK'],
+      avosMaternos: ['URANO SHAKIRA AX DO MARILAURA', 'SEVILLA DE YOLCRIS'],
+      bisavosPaternos: [
+        'CHEF FANTON VON BR OLIVIO',
+        'IZA PANCHO VON BR OLIVIO',
+        'SIMBA PONCIUS VON BR OLIVIO',
+        'XAKIRA ELITO VON BR OLIVIO'
+      ],
+      bisavosMaternos: [
+        'AX VON ERFOLG',
+        'SHAKIRA BALLU ABBY DO MARILAURA',
+        'GARI VOM HAUSE EDELSTEIN',
+        'MELISSA DE YOLCRIS'
+      ]
+    }
+  },
+
+  {
+    id: '6',
+    name: 'BLANCA BOOMER VON BR OLIVIO',
+    image: Blanca,
+    dados: {
+      numero: '246',
+      apelido: 'BLANCA',
+      nome: 'BLANCA BOOMER VON BR OLIVIO',
+      rg: 'SPAT/16/00849',
+      microchip: '985111001115675',
+      dataNascimento: '04/10/2016',
+      sexo: 'Femea',
+      displasia: 'HD-/ED0 - CPPA (CBRR)',
+    },
+    titulos: [ 
+      {
+        exposicao: 'Prova de Indole e Temperamento - CBRR',
+        classificacao: 'Aprovado',
+        juiz: 'João Batista',
+        data: '22/09/2019',
+        local: 'Atibaia, SP'
+      }, 
+      {
+        exposicao: 'CPPA (Cert. de Permitido para Acasalamento)',
+        classificacao: 'Homologado',
+        juiz: '-',
+        data: '-',
+        local: 'CBRR'
+      },
+      {
+        exposicao: '-',
+        classificacao: 'Campeão',
+        juiz: '-',
+        data: 'JUNHO/2022',
+        local: 'CBKC - BRASIL'
+      },
+      {
+        exposicao: '-',
+        classificacao: 'GRANDE CAMPEÃO',
+        juiz: '',
+        data: 'MAIO/2023',
+        local: 'CBKC - BRASIL'
+      },
+      {
+        exposicao: '-',
+        classificacao: 'CAMPEÃO PANAMERICANO',
+        juiz: '-',
+        data: 'ABRIL/2023',
+        local: 'CBKC - BRASIL'
+      }
+    ],
+      pedigree: {
+      pai: 'BOOMER VOM SCHWARZEN SKORPION',
+      mae: 'XENA XULU VON BR OLIVIO',
+      avosPaternos: ['EKKO VOM KUMMELSEE', 'LUNA VOM PFALZER MICHEL'],
+      avosMaternos: ['XULU AUS DER WILDNIS', 'SAMANTA UWE VON BR OLIVIO'],
+      bisavosPaternos: [
+        'QUEX VOM KUMMELSEE',
+        'JOLA VOM KUMMELSEE',
+        'XEDOR VOM KUMMELSEE',
+        'BONNY VOM PFALZER MICHEL'
+      ],
+      bisavosMaternos: [
+        'KLIFF VON DER CROSSENER RANCH',
+        'WHITNEY VON DER CROSSENER RANCH',
+        'UWE AUS DER WILDNIS',
+        'GWEN BANDIT VON BR OLIVIO'
+      ]
+    }
+  },
+    
+
+  {
+    id: '7',
+    name: 'BOOMER VOM SCHWARZEN SKORPION',
+    image: Boomer,
+    dados: {
+      numero: '143',
+      apelido: 'BOOMER',
+      nome: 'BOOMER VOM SCHWARZEN SKORPION',
+      rg: 'BR9921',
+      microchip: '276098104513235',
+      dataNascimento: '18/07/2013',
+      sexo: 'Macho',
+      displasia: '	HD-/ED0 - CPPA (CBRR)',
+    },
+    titulos: [ 
+      {
+        exposicao: 'Prova de Indole e Temperamento - CBRR',
+        classificacao: 'Aprovado',
+        juiz: 'João Batista',
+        data: '10/11/2018',
+        local: 'CBRR'
+      }, 
+      {
+        exposicao: 'CPPA (Cert. de Permitido para Acasalamento)',
+        classificacao: 'Homologado',
+        juiz: '-',
+        data: '06/11/2019',
+        local: 'CBRR'
+      },
+    ],
+    pedigree: {
+    pai: 'EKKO VOM KUMMELSEE',
+    mae: 'LUNA VOM PFALZER MICHEL',
+    avosPaternos: ['QUEX VOM KUMMELSEE', 'JOLA VOM KUMMELSEE'],
+    avosMaternos: ['XEDOR VOM KUMMELSEE', 'BONNY VOM PFALZER MICHEL'],
+    bisavosPaternos: [
+      'UMBRO VOM SITTARD',
+      'NIKITA VOM KUMMELSEE',
+      'HENRY VON DEN HASSBERGHOHEN',
+      'VIVI VOM KUMMELSEE'
+    ],
+    bisavosMaternos: [
+      'LEWIS VOM KUMMELSEEV',
+      'NIKITA VOM KUMMELSEE',
+      'NESTOR VON DEN SIEBEN EICHEN',
+      'ELISE VOM HAUSE ZIMMERMANN'
+    ]
+  }
+},
+
+{
+  id: '8',
+  name: 'BRAVA QUEVIN VON BR OLIVIO',
+  image: Brava,
+  dados: {
+    numero: '32',
+    apelido: 'BRAVA QUEVIN',
+    nome: 'BRAVA QUEVIN VON BR OLIVIO',
+    rg: 'SPAT/13/00761',
+    microchip: '982000362186621',
+    dataNascimento: '07/09/2013',
+    sexo: 'Femea',
+    displasia: 'HD-/ED0',
+  },
+  titulos: [ 
+    {
+      exposicao: 'Especializada',
+      classificacao: 'Baby Siegerin',
+      juiz: 'Carlos Mion',
+      data: '25/05/2014',
+      local: 'APRO'
+    }, 
+    {
+      exposicao: 'Especializada',
+      classificacao: 'Jovem Siegerin',
+      juiz: 'Pablo Piazza / Vinicio Paolo / Walter Coutinh',
+      data: '08/11/2014',
+      local: 'NACIONAL APRO 2014'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'Campeão Filhote',
+      juiz: '-',
+      data: 'JANEIRO/2015',
+      local: 'CBKC - BRASIL'
+    },
+
+    {
+      exposicao: '-',
+      classificacao: 'Campeão Jovem',
+      juiz: '-',
+      data: 'JANEIRO/2015',
+      local: 'CBKC - BRASIL'
+    },
+
+    {
+      exposicao: '-',
+      classificacao: 'Campeão',
+      juiz: '-',
+      data: 'DEZEMBRO/2015',
+      local: 'CBKC - BRASIL'
+    },
+
+    {
+      exposicao: '-',
+      classificacao: 'Campeão Panamericano',
+      juiz: '-',
+      data: 'DEZEMBRO/2015',
+      local: 'CBKC - BRASIL'
+    },
+    
+  ],
+  pedigree: {
+  pai: 'QUEVIN HALF VON BR OLIVIO',
+  mae: 'PENELOPE MAX VON BR OLIVIO',
+  avosPaternos: ['HALF PANCHO VON BR OLIVIO', 'JESSY CHEF VON BR OLIVIO'],
+  avosMaternos: ['MAX CHEF VON BR OLIVIO', 'QUEEN JACKOMO VON BR OLIVIO'],
+  bisavosPaternos: [
+    'PANCHO CHAN VON OLIVIO',
+    'YOLANDA CYBORG VON BR OLIVIO',
+    'CHEF FANTON VON OLIVIO',
+    'XARI FANTON VON OLIVIO'
+  ],
+  bisavosMaternos: [
+    'CHEF FANTON VON OLIVIO',
+    'PALOMA PANCHO VON OLIVIO',
+    'JACKOMO XANTOS VON OLIVIO',
+    'XARI FANTON VON OLIVIO'
+  ]
+}
+},
+  // Adiciconar mais cães aqui...
 ];
 
 const DogsPage: React.FC = () => {
