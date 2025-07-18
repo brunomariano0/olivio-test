@@ -1,41 +1,32 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
+import { Dog, Home, Award, Stethoscope, Star } from 'lucide-react';
 
 const ServicesPage = () => {
   return (
     <div className="container mx-auto px-4 py-12">
-      <SectionTitle title="Our Services" subtitle="Professional Dog Services" />
+      <SectionTitle title="Nossos Serviços" subtitle="Contamos com os melhores profissionais do ramo, formando uma equipe altamente qualificada para atender e promover o melhor para seu cão!" center />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         <ServiceCard
-          title="Dog Training"
-          description="Professional training services to help your dog become well-behaved and obedient. We offer both group and private sessions."
-          price="From $75/session"
+          title="Adestramento e Obediência"
+          description="Um cão obediente e educado encanta a todos e ainda é motivo de orgulho para você!"
+          icon={<Dog size={40} />}
         />
         <ServiceCard
-          title="Breeding Consultation"
-          description="Expert guidance on responsible breeding practices, genetic health testing, and puppy care."
-          price="From $150/consultation"
+          title="Hospedagem"
+          description="Vai viajar? Hospede seu cão conosco!"
+          icon={<Home size={40} />}
         />
         <ServiceCard
-          title="Health Screening"
-          description="Comprehensive health screenings and genetic testing for breeding dogs to ensure healthy bloodlines."
-          price="From $200/screening"
+          title="Seu cão Campeão"
+          description="Treinamento diferenciado e focado para cães de beleza!"
+          icon={<Award size={40} />}
         />
         <ServiceCard
-          title="Puppy Socialization"
-          description="Early socialization programs to help puppies develop into well-adjusted adult dogs."
-          price="From $50/session"
-        />
-        <ServiceCard
-          title="Stud Services"
-          description="Professional stud services with our champion bloodline dogs, including health certifications."
-          price="Contact for pricing"
-        />
-        <ServiceCard
-          title="Breeding Program Support"
-          description="Full-service support for your breeding program, including whelping assistance and puppy care guidance."
-          price="Custom packages available"
+          title="Serviços Veterinários"
+          description="Atendimentos diferenciados e a domicílio! Contate-nos"
+          icon={<Stethoscope size={40} />}
         />
       </div>
     </div>

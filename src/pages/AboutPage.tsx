@@ -2,18 +2,17 @@ import React from 'react';
 import { Shield, Award, Heart, Users, ThumbsUp, DogIcon } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 
+// Imagens
+import Brava from '../img/Brava.jpg';
+import Berlin from '../img/Berlin.jpg'
+import Blanca from '../img/Blanca.jpg'
+import Amy from '../img/Amy.jpg'
+
 const AboutPage: React.FC = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative py-28 bg-gray-900">
-        <div className="absolute inset-0 opacity-30">
-          <img 
-            src="https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-            alt="Rottweiler" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="relative py-14 bg-gray-900">       
         <div className="container relative">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Sobre Nós</h1>
           <div className="h-1 w-20 bg-accent mb-6"></div>
@@ -28,7 +27,7 @@ const AboutPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 lg:order-1">
               <SectionTitle 
                 title="Nossa História" 
                 subtitle="Uma trajetória de paixão e dedicação à raça Rottweiler."
@@ -60,13 +59,13 @@ const AboutPage: React.FC = () => {
               </p>
             </div>
             
-            <div className="relative h-[600px]">
+            <div className="relative h-[600px] order-1 lg:order-2">
               <img 
-                src="https://images.pexels.com/photos/5256116/pexels-photo-5256116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Rottweiler" 
+                src={Brava} 
+                alt="Brava" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
-              <div className="absolute top-4 right-4 bg-primary text-white p-4 rounded">
+              <div className="absolute top-4 left-4 bg-primary text-white p-4 rounded">
                 <span className="block text-3xl font-bold">20+</span>
                 <span>Anos de Experiência</span>
               </div>
@@ -213,23 +212,23 @@ const AboutPage: React.FC = () => {
             
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.pexels.com/photos/2695827/pexels-photo-2695827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Rottweiler training" 
+                src={Brava} 
+                alt="Brava" 
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="https://images.pexels.com/photos/4587971/pexels-photo-4587971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Rottweiler puppies" 
+                src={Berlin} 
+                alt="Berlin" 
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="https://images.pexels.com/photos/5256142/pexels-photo-5256142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Rottweiler show" 
+                src={Blanca} 
+                alt="Blanca" 
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="https://images.pexels.com/photos/7567255/pexels-photo-7567255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Rottweiler health check" 
+                src={Amy} 
+                alt="Amy" 
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
             </div>
@@ -237,65 +236,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="section bg-gray-50">
-        <div className="container">
-          <SectionTitle 
-            title="Nossa Equipe" 
-            subtitle="Conheça os profissionais dedicados que fazem parte do Canil Von Olivio."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Reginaldo Olivio" 
-                className="w-full h-80 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Reginaldo Olivio</h3>
-                <p className="text-primary font-medium mb-4">Fundador e Criador</p>
-                <p className="text-gray-600">
-                  Com mais de 25 anos de experiência na criação de Rottweilers, 
-                  é reconhecido nacionalmente por sua contribuição ao desenvolvimento da raça no Brasil.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/5214413/pexels-photo-5214413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Dra. Mariana Santos" 
-                className="w-full h-80 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Dra. Mariana Santos</h3>
-                <p className="text-primary font-medium mb-4">Médica Veterinária</p>
-                <p className="text-gray-600">
-                  Especialista em reprodução canina e saúde de Rottweilers, 
-                  garante os mais altos padrões de cuidados veterinários para nossos cães.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/4148042/pexels-photo-4148042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Carlos Mendes" 
-                className="w-full h-80 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Carlos Mendes</h3>
-                <p className="text-primary font-medium mb-4">Treinador Chefe</p>
-                <p className="text-gray-600">
-                  Especialista em comportamento canino e adestramento, 
-                  responsável pelo desenvolvimento comportamental dos nossos cães.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Achievements */}
       <section className="section bg-white">

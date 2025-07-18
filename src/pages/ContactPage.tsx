@@ -8,12 +8,8 @@ const ContactPage: React.FC = () => {
     <div>
       {/* Hero */}
       <section className="relative py-28 bg-gray-900">
-        <div className="absolute inset-0 opacity-30">
-          <img 
-            src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-            alt="Rottweiler" 
-            className="w-full h-full object-cover"
-          />
+        <div className="absolute inset-0 opacity-30">         
+          
         </div>
         <div className="container relative">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contato</h1>

@@ -8,11 +8,7 @@ const LittersPage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-28 bg-gray-900">
         <div className="absolute inset-0 opacity-30">
-          <img 
-            src="https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-            alt="Rottweiler puppies" 
-            className="w-full h-full object-cover"
-          />
+          
         </div>
         <div className="container relative">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Ninhadas Disponíveis</h1>
@@ -105,16 +101,7 @@ const LittersPage: React.FC = () => {
               </div>
               
               <div className="space-y-6">
-                <img 
-                  src="https://images.pexels.com/photos/4587971/pexels-photo-4587971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Rottweiler puppies" 
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
-                />
-                <img 
-                  src="https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Rottweiler puppies playing" 
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
-                />
+                
               </div>
             </div>
             
