@@ -11,6 +11,12 @@ import Berlin from '../img/Berlin.jpg';
 import Blanca from '../img/Blanca.jpg';
 import Boomer from '../img/Boomer.jpg';
 import Brava from '../img/Brava.jpg';
+import Bronx from '../img/Bronx.jpg'
+import Burca from '../img/Burca.jpg'
+import Canto from '../img/Canto.jpg'
+import Chef from '../img/Chef.jpg'
+import Cristal from '../img/Crystal.jpg'
+import CristalMike from '../img/CristalMike.jpg'
 
 
 interface DogTitle {
@@ -486,6 +492,365 @@ const dogs: Dog[] = [
     'XARI FANTON VON OLIVIO'
   ]
 }
+},
+
+{
+  id: '9',
+  name: 'BRONX SANTO VON BR OLIVIO',
+  image: Bronx,
+  dados: {
+    numero: '337',
+    apelido: 'BRONX',
+    nome: 'BRONX SANTO VON BR OLIVIO',
+    rg: 'SPAT/21/01244',
+    microchip: '900233001277086',
+    dataNascimento: '15/08/2021',
+    sexo: 'Macho',
+    displasia: 'HD- / ED0 - CPPA (CBRR)',
+  },
+  titulos: [
+    {
+      exposicao: 'Prova de Índole e Temperamento - CBRR',
+      classificacao: 'Aprovado',
+      juiz: 'Diego da Silva Marcelino',
+      data: '02/12/2023',
+      local: 'Araçoiaba da Serra, SP'
+    },
+    {
+      exposicao: 'CPPA (Certificado de Permitido para Acasalame',
+      classificacao: 'Homologado',
+      juiz: '-',
+      data: 'DEZEMBRO/2023',
+      local: 'CBRR - CONSELHO BRASILEIRO RAÇA ROTTWEILER'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'CAMPEÃO',
+      juiz: '-',
+      data: '11/06/2022',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'CAMPEÃO PANAMERICANO',
+      juiz: '-',
+      data: '02/09/2024',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'GRANDE CAMPEÃO',
+      juiz: '-',
+      data: '18/09/2024',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'GRANDE CAMPEÃO PANAMERICANO',
+      juiz: '-',
+      data: '18/03/2025',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'ROTTWIELER #1',
+      juiz: '-',
+      data: '2024',
+      local: 'Ranking CBKC / DOGSHOW / CBRR'
+    }
+  ],
+  pedigree: {
+    pai: 'JESTER DJUKE VON BR OLIVIO',
+    mae: 'EVA SANTO VON BR OLIVIO',
+    avosPaternos: ['DJUKE GRINGO VON BR OLIVIO', 'ALPHA QUEX VON BR OLIVIO'],
+    avosMaternos: ['SANTO CHEF II VON BR OLIVIO', 'CAPITU MAX VON BR OLIVIO'],
+    bisavosPaternos: [
+      'GRINGO VOM OBERPFALZER WALD',
+      'ZIGGY CHEF VON BR OLIVIO',
+      'QUEX VOM KUMMELSEE',
+      'OPHRA VOM HIRSCHENRANGEN'
+    ],
+    bisavosMaternos: [
+      'CHEF II VON BR OLIVIO',
+      'PANDORA SIMBA VON BR OLIVIO',
+      'MAX VON DER CROSSENER RANCH',
+      'XARA VON DER CROSSENER RANCH'
+    ]
+  }
+},
+
+{
+  id: '10',
+  name: 'BURCA BOOMER VON BR OLIVIO',
+  image: Burca,
+  dados: {
+    numero: '247',
+    apelido: '	BURCA',
+    nome: 'BURCA BOOMER VON BR OLIVIO',
+    rg: 'SPAT/16/00850',
+    microchip: '985111001118912',
+    dataNascimento: '04/10/2016',
+    sexo: 'Fêmea',
+    displasia: 'HD+/- / ED0 - CPPA (CBRR)',
+  },
+  titulos: [
+    {
+      exposicao: 'Prova de Índole e Temperamento - CBRR',
+      classificacao: 'Aprovado',
+      juiz: 'Joao Batista',
+      data: '-',
+      local: '-'
+    },
+    {
+      exposicao: 'CPPA (Certificado de Permitido para Acasalamento)',
+      classificacao: 'Homologado',
+      juiz: '-',
+      data: 'MAIO/2021',
+      local: 'CBRR'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'CAMPEÃO',
+      juiz: '-',
+      data: 'JUNHO/2021',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'CAMPEÃO PANAMERICANO',
+      juiz: '-',
+      data: '-',
+      local: 'CBKC - BRASIL'
+    }   
+  ],
+  pedigree: {
+    pai: 'BOOMER VOM SCHWARZEN SKORPION',
+    mae: 'XENA XULU VON BR OLIVIO',
+    avosPaternos: ['EKKO VOM KUMMELSEE', 'LUNA VOM PFALZER MICHEL'],
+    avosMaternos: ['XULU AUS DER WILDNIS', 'SAMANTA UWE VON BR OLIVIO'],
+    bisavosPaternos: [
+      'QUEX VOM KUMMELSEE',
+      'JOLA VOM KUMMELSEE',
+      'XEDOR VOM KUMMELSEE',
+      'BONNY VOM PFALZER MICHEL'
+    ],
+    bisavosMaternos: [
+      'KLIFF VON DER CROSSENER RANCH',
+      'WHITNEY VON DER CROSSENER RANCH',
+      'UWE AUS DER WILDNIS',
+      'GWEN BANDIT VON BR OLIVIO'
+    ]
+  }
+},
+
+{
+  id: '11',
+  name: 'CANTO VON DER CROSSENER RANCH',
+  image: Canto,
+  dados: {
+    numero: '34',
+    apelido: 'CANTO',
+    nome: 'CANTO VON DER CROSSENER RANCH',
+    rg: 'BR8269',
+    microchip: '945000001234854',
+    dataNascimento: '21/03/2012',
+    sexo: 'Macho',
+    displasia: 'HD+- / ED1',
+  },
+  titulos: [
+    {
+      exposicao: '-',
+      classificacao: '-',
+      juiz: '-',
+      data: '-',
+      local: '-'
+    },       
+  ],
+  pedigree: {
+    pai: 'HERO VON DER TONBERGER HOHE',
+    mae: 'HERA VON DER CROSSENER RANCH',
+    avosPaternos: ['EXEL VOM WEISSEN SCHWAN', 'CIM VON DER TONBERGER HOHE'],
+    avosMaternos: ['MAMBO VON DER CROSSENER RANCH', 'KIRA VOM MUHLBERG'],
+    bisavosPaternos: [
+      'ZAMP VOM WEISSEN SCHWAN',
+      'ZYRA VOM WEISSEN SCHWAN',
+      'MAMBO VON DER CROSSENER RANCH',
+      'IRIS VOM WOLFSBERG'
+    ],
+    bisavosMaternos: [
+      'RICK VON BURGTHANN',
+      'EVI VON DER CROSSENER RANCH',
+      'ORLANDO VOM HAUSE NEUBRAND',
+      'ELVI VON DER CROSSENER RANCH'
+    ]
+  }
+},
+
+{
+  id: '12',
+  name: ' CHEF II VON BR OLIVIO',
+  image: Chef,
+  dados: {
+    numero: '16',
+    apelido: 'CHEF II',
+    nome: 'CHEF II VON BR OLIVIO',
+    rg: 'SPAT/11/00729',
+    microchip: '963006008601851',
+    dataNascimento: '16/12/2011',
+    sexo: 'Macho',
+    displasia: 'HD-/ED0 - CPPA (CBRR)',
+  },
+  titulos: [
+    {
+      exposicao: 'Especializada',
+      classificacao: 'Sieger (Melhor Macho)',
+      juiz: 'Walter Coutinho / Pablo Piazza',
+      data: '09/11/2014',
+      local: 'NACIONAL APRO 2014'
+    },  
+    {
+      exposicao: '-',
+      classificacao: 'Campeão',
+      juiz: '-',
+      data: '2014',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'Grande Campeão',
+      juiz: '-',
+      data: '2016',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: '-',
+      classificacao: 'Campeão Panamericano',
+      juiz: '-',
+      data: '2016',
+      local: 'CBKC - BRASIL'
+    },
+    {
+      exposicao: 'Prova de Indole e Temperamento - CBRR',
+      classificacao: 'Aprovado',
+      juiz: 'João Batista',
+      data: '27/10/2018',
+      local: 'Tatui, SP'
+    }, 
+    {
+      exposicao: 'CPPA (Certificado de Permitido para Acasalame',
+      classificacao: 'Homologado',
+      juiz: '-',
+      data: '20/12/2018',
+      local: 'CBRR'
+    }  
+    
+  ],
+  pedigree: {
+    pai: 'CHEF FANTON VON OLIVIO',
+    mae: 'IZA PANCHO VON BR OLIVIO',
+    avosPaternos: ['FANTON ONEX VON OLIVIO', 'QUENDY ARMIN ZUM RITTER'],
+    avosMaternos: ['PANCHO CHAN VON OLIVIO', 'SANDY NATAN VON BR OLIVIO'],
+    bisavosPaternos: [
+      'ONEX VOM SCHWARGER WAPPEN',
+      'HOPPERS TROYKA ZUM RITTER',
+      'BLUE-MAX ARMIN',
+      'PIA AMBASSADOR AV VALHAL'
+    ],
+    bisavosMaternos: [
+      'CHAN VON DER BLEICHSTRASSE',
+      'OLYMPIA VOM HAUSE NEUBRAND',
+      'NATAN ONEX VON OLIVIO',
+      'PETRA CHAN VON OLIVIO'
+    ]
+  }
+},
+
+{
+  id: '13',
+  name: ' CRISTAL DJUKE VON BR OLIVIO',
+  image: Cristal,
+  dados: {
+    numero: '276',
+    apelido: 'CRISTAL',
+    nome: 'CRISTAL DJUKE VON BR OLIVIO',
+    rg: 'SPAT/19/00264',
+    microchip: '-',
+    dataNascimento: '11/02/2019',
+    sexo: 'Fêmea',
+    displasia: 'HD+/- / ED1',
+  },
+  titulos: [
+    {
+      exposicao: '-',
+      classificacao: '-',
+      juiz: '-',
+      data: '-',
+      local: '-'
+    },    
+    
+  ],
+  pedigree: {
+    pai: 'DJUKE GRINGO VON BR OLIVIO',
+    mae: 'ELLEN YOSCHI VON BR OLIVIO',
+    avosPaternos: ['GRINGO VOM OBERPFALZER WALD', 'ZIGGY CHEF VON BR OLIVIO'],
+    avosMaternos: ['YOSCHI VOM KUMMELSEE', 'GUEZA BANDIT VON BR OLIVIO'],
+    bisavosPaternos: [
+      'DINGO VOM GRUNTENBLICK',
+      'BONNY VOM OBERPFALZER WALD',
+      'CHEF FANTON VON OLIVIO',
+      'INES VON RAUBERWEG'
+    ],
+    bisavosMaternos: [
+      'EXEL VOM WEISSEN SCHWAN',
+      'NIKITA VOM KUMMELSEE',
+      'BANDIT ARKO VON BR OLIVIO',
+      'ANDORA VON DER TEUFELSBRUCKE'
+    ]
+  }
+},
+
+{
+  id: '14',
+  name: ' CRISTAL MIKE VON BR OLIVIO',
+  image: CristalMike,
+  dados: {
+    numero: '311',
+    apelido: 'CRISTAL',
+    nome: 'CRISTAL MIKE VON BR OLIVIO',
+    rg: 'SPAT/19/01151',
+    microchip: '-',
+    dataNascimento: '07/10/2019',
+    sexo: 'Fêmea',
+    displasia: 'HD- / ED0',
+  },
+  titulos: [
+    {
+      exposicao: '-',
+      classificacao: '-',
+      juiz: '-',
+      data: '-',
+      local: '-'
+    },    
+    
+  ],
+  pedigree: {
+    pai: 'MIKE LIONS VON BR OLIVIO',
+    mae: 'MILLE ZIDANE VON BR OLIVIO',
+    avosPaternos: ['DEVIL LIONS OF PLIVA', 'IVI CHEF VON BR OLIVIO'],
+    avosMaternos: ['ZIDANE CHEF VON BR OLIVIO', 'ELLEN YOSCHI VON BR OLIVIO'],
+    bisavosPaternos: [
+      'SUIMO HOUSE OF LAZIC',
+      'VICTORIA HOUSE "HAUS OF LAZIC"',
+      'CHEF FANTON VON OLIVIO',
+      'XARI FANTON VON OLIVIO'
+    ],
+    bisavosMaternos: [
+      'CHEF FANTON VON OLIVIO',
+      'INES VOM RAUBERWEG',
+      'YOSCHI VOM KUMMELSEE',
+      'GUEZA BANDIT VON BR OLIVIO'
+    ]
+  }
 },
   // Adiciconar mais cães aqui...
 ];
