@@ -20,6 +20,7 @@ import Royal from '../img/Royal.png';
 import Msd from '../img/MSD.png';
 import Bravecto from '../img/Bravecto.png';
 import Vetnil from '../img/Vetnil.png';
+import Canil from '../img/canil.jpg';
 
 import { useState, useEffect } from 'react';
 
@@ -196,7 +197,7 @@ const HomePage: React.FC = () => {
             
             <div className="relative h-[500px] animate-slide-up">
               <img 
-                src="../img/canil.jpg" 
+                src={Canil}
                 alt="Foto Canil" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
