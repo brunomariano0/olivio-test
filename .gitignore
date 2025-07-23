@@ -12,6 +12,17 @@ dist
 dist-ssr
 *.local
 
+# Build
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +33,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Locaweb (evita subir arquivos de servidor local ou config inútil)
+*.bak
+*.tmp
+*.swp

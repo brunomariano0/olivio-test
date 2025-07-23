@@ -196,8 +196,8 @@ const HomePage: React.FC = () => {
             
             <div className="relative h-[500px] animate-slide-up">
               <img 
-                src="../src/img/canil.jpg" 
-                alt="Rottweiler" 
+                src="../img/canil.jpg" 
+                alt="Foto Canil" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-secondary p-6 rounded-lg shadow-lg">
