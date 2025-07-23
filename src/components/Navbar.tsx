@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             <a href="https://facebook.com" aria-label="Facebook" className="hover:text-accent transition">
               <Facebook size={18} />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" className="hover:text-accent transition">
+            <a href="https://www.instagram.com/reginaldovonolivio/" aria-label="Instagram" className="hover:text-accent transition">
               <Instagram size={18} />
             </a>
           </div>

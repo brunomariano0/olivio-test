@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <a href="https://facebook.com" className="text-white hover:text-accent transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="https://instagram.com" className="text-white hover:text-accent transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/reginaldovonolivio/" className="text-white hover:text-accent transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
               <a href="https://youtube.com" className="text-white hover:text-accent transition-colors" aria-label="Youtube">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <MapPin size={20} className="mr-3 mt-1 text-accent" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Santo André, SP - Brasil</span>
               </li>
               <li className="flex items-start">
                 <Clock size={20} className="mr-3 mt-1 text-accent" />

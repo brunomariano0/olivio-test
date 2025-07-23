@@ -14,6 +14,7 @@ import Jester from '../img/Jester.jpg';
 import Quex from '../img/Quex.jpg';
 import Amy from '../img/Amy.jpg';
 import Filhotes from '../img/filhote.jpg';
+import Capa from '../img/Capa.png';
 
 import Royal from '../img/Royal.png';
 import Msd from '../img/MSD.png';
@@ -30,6 +31,8 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
+
+    
     <div>
       {/* Store Announcement Modal */}
       {showStoreModal && (
@@ -115,13 +118,13 @@ const HomePage: React.FC = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0 bg-black/50">
           <img 
-            src={Dog} 
+            src={Capa} 
             alt="Rottweiler" 
-            className="w-full h-full object-cover mix-blend-overlay"
+            className="w-full h-full object-cover object-top mix-blend-overlay"
           />
         </div>
-        <div className="container relative h-full flex flex-col justify-center">
-          <div className="max-w-3xl animate-fade-in">
+        <div className="container relative h-full flex items-center justify-end">
+  <div className="max-w-3xl animate-fade-in text-right">
             <h1 className="text-4xl md:text-6xl text-white font-bold mb-6">
               Canil Von Olivio
             </h1>
@@ -449,8 +452,29 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
       </section>
+
+      <a 
+  href="https://wa.me/5511994424033?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20os%20filhotes%20do%20Canil%20Von%20Olivio!" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="fixed bottom-6 left-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-300"
+>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 448 512" 
+    fill="currentColor" 
+    className="w-5 h-5"
+  >
+    <path d="M380.9 97.1C339-12.7 195.6-35.2 111.7 48.9 47.5 113.2 32.1 209.3 70.6 285.1L4.2 469.4c-2.3 6.5 4.2 12.7 10.7 10.7l183.7-66.2c73.8 37.9 163.8 24.3 223.4-35.4 83.9-83.9 61.4-227.3-41.1-280.4zM265.8 367.6c-54.4 0-105.1-26.5-134.5-71.2l-9.6-14.5-57.6 20.7 20.7-57.6-14.5-9.6c-44.7-29.4-71.2-80.1-71.2-134.5 0-94.1 76.6-170.7 170.7-170.7s170.7 76.6 170.7 170.7-76.6 170.6-170.7 170.6z"/>
+  </svg>
+  Fale Conosco
+</a>
+
+
     </div>
+    
   );
 };
 
 export default HomePage;
+
