@@ -5,9 +5,9 @@ import SectionTitle from '../components/SectionTitle';
 import DogCard from '../components/DogCard';
 import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
+import LitterCard from '../components/LitterCard';
 import { ShoppingBag, X, Package, Truck, CreditCard, Gift, Star } from 'lucide-react';
 import { Calendar, User, Phone } from 'lucide-react';
-
 
 import Dog from '../img/rottweiler.jpg';
 import Jester from '../img/Jester.jpg';
@@ -23,9 +23,11 @@ import Vetnil from '../img/Vetnil.png';
 import Canil from '../img/canil.jpg';
 
 import { useState, useEffect } from 'react';
+import { getLatestLitter } from '../data/litters';
 
 const HomePage: React.FC = () => {
   const [showStoreModal, setShowStoreModal] = useState(false);
+  const [latestLitter, setLatestLitter] = useState(getLatestLitter());
 
   useEffect(() => {
     setShowStoreModal(true);
@@ -46,19 +48,19 @@ const HomePage: React.FC = () => {
             className="w-full h-full object-cover object-top mix-blend-overlay"
           />
         </div>
-        <div className="container relative h-full flex items-center justify-end">
-  <div className="max-w-3xl animate-fade-in text-right">
+        <div className="container relative h-full flex items-center justify-center md:justify-end">
+          <div className="max-w-3xl animate-fade-in text-center md:text-right">
             <h1 className="text-4xl md:text-6xl text-white font-bold mb-6">
               Canil Von Olivio
             </h1>
             <h2 className="text-2xl md:text-3xl text-accent font-bold mb-6">
               Melhor Criador da Raça Rottweiler - 2002 a 2022
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto md:mx-0">
               Há mais de 20 anos criando exemplares superiores com genética comprovada, 
               temperamento equilibrado e saúde garantida.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Link to="/dogs" className="btn btn-primary">
                 Conheça Nossos Cães
               </Link>
@@ -237,50 +239,55 @@ const HomePage: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Compre hoje mesmo o seu Filhote de Rottweiler. Despachamos para todo Brasil!
           </p>
-          <div className="bg-white/95 p-8 rounded-xl max-w-3xl mx-auto mb-8 shadow-2xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">RESERVAS EM BREVE</h3>
-                  <div className="h-1 w-20 bg-primary rounded-full mb-4"></div>
-                </div>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="text-primary" size={20} />
-                    <p className="text-gray-700">EM BREVE</p>
+          
+          {latestLitter ? (
+            <LitterCard litter={latestLitter} />
+          ) : (
+            <div className="bg-white/95 p-8 rounded-xl max-w-3xl mx-auto mb-8 shadow-2xl">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-2xl font-bold text-primary mb-2">RESERVAS EM BREVE</h3>
+                    <div className="h-1 w-20 bg-primary rounded-full mb-4"></div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="text-primary" size={20} />
-                    <p className="text-gray-700">EM BREVE</p>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="text-primary" size={20} />
+                      <p className="text-gray-700">EM BREVE</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="text-primary" size={20} />
+                      <p className="text-gray-700">EM BREVE</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-700 font-medium mb-2">Para maiores informações:</p>
+                    <p className="text-xl font-bold text-primary flex items-center justify-center gap-2">
+                      <Phone size={20} />
+                      11-99442-4033 (REGINALDO)
+                    </p>
                   </div>
                 </div>
 
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-gray-700 font-medium mb-2">Para maiores informações:</p>
-                  <p className="text-xl font-bold text-primary flex items-center justify-center gap-2">
-                    <Phone size={20} />
-                    11-99442-4033 (REGINALDO)
-                  </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <img 
+                    src={Jester} 
+                    alt="Orion" 
+                    className="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                  />
+                  <img 
+                    src={Amy} 
+                    alt="Radissa" 
+                    className="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                  />
+                  <p className="text-center text-sm font-medium text-gray-600">-</p>
+                  <p className="text-center text-sm font-medium text-gray-600">-</p>
                 </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <img 
-                  src={Jester} 
-                  alt="Orion" 
-                  className="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-                />
-                <img 
-                  src={Amy} 
-                  alt="Radissa" 
-                  className="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-                />
-                <p className="text-center text-sm font-medium text-gray-600">-</p>
-                <p className="text-center text-sm font-medium text-gray-600">-</p>
               </div>
             </div>
-          </div>
+          )}
           
           <Link to="/litters" className="btn btn-accent text-lg px-8 py-3 hover:scale-105 transition-transform">
             Mais Informações
