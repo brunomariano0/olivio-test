@@ -11,17 +11,7 @@ import Amy from '../img/Amy.jpg'
 const AboutPage: React.FC = () => {
   return (
     <div>
-      {/* Hero */}
-      <section className="relative py-14 bg-gray-900">       
-        <div className="container relative">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Sobre Nós</h1>
-          <div className="h-1 w-20 bg-accent mb-6"></div>
-          <p className="text-xl text-white/90 max-w-2xl">
-            Conheça a história e a filosofia do Canil Von Olivio, 
-            referência na criação de Rottweilers no Brasil.
-          </p>
-        </div>
-      </section>
+      {/* Hero */}      
 
       {/* History Section */}
       <section className="section bg-white">
@@ -59,7 +49,7 @@ const AboutPage: React.FC = () => {
               </p>
             </div>
             
-            <div className="relative h-[600px] order-1 lg:order-2">
+            <div className="relative h-[750px] order-1 lg:order-2">
               <img 
                 src={Brava} 
                 alt="Brava" 
@@ -214,22 +204,22 @@ const AboutPage: React.FC = () => {
               <img 
                 src={Brava} 
                 alt="Brava" 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-85 object-cover bg-white rounded-lg shadow-md" 
               />
               <img 
                 src={Berlin} 
                 alt="Berlin" 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-85 object-cover bg-white rounded-lg shadow-md" 
               />
               <img 
                 src={Blanca} 
                 alt="Blanca" 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-85 object-cover bg-white rounded-lg shadow-md" 
               />
               <img 
                 src={Amy} 
                 alt="Amy" 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-85 object-cover bg-white rounded-lg shadow-md" 
               />
             </div>
           </div>

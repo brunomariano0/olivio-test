@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-secondary text-white">
       <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About */}
           <div>
             <Logo className="h-20 w-auto mb-4" />
@@ -70,20 +70,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-accent">Newsletter</h3>
-            <p className="mb-4 text-gray-300">Inscreva-se para receber novidades sobre ninhadas e eventos.</p>
-            <form className="space-y-3">
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Seu email" 
-                  className="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-              </div>
-              <button type="submit" className="btn btn-accent w-full">Inscrever</button>
-            </form>
-          </div>
+          
         </div>
       </div>
       

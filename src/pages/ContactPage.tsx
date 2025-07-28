@@ -7,18 +7,7 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative py-28 bg-gray-900">
-        <div className="absolute inset-0 opacity-30">         
-          
-        </div>
-        <div className="container relative">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contato</h1>
-          <div className="h-1 w-20 bg-accent mb-6"></div>
-          <p className="text-xl text-white/90 max-w-2xl">
-            Entre em contato conosco para mais informações sobre nossos serviços ou filhotes disponíveis.
-          </p>
-        </div>
-      </section>
+      
 
       {/* Contact Information */}
       <section className="section bg-white">
@@ -125,13 +114,16 @@ const ContactPage: React.FC = () => {
       <section className="py-12 bg-gray-50">
         <div className="container">
           <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-            {/* Replace with an actual Google Maps embed */}
-            <div className="bg-gray-200 w-full h-full flex items-center justify-center">
-              <p className="text-gray-500 text-center p-8">
-                O mapa do Google será carregado aqui.<br />
-                <small>(Por questões de privacidade, o endereço exato é fornecido apenas mediante contato)</small>
-              </p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.017687785714!2d-47.6781336!3d-23.564733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c593502fe46db1%3A0xba4c6e4f525854ac!2sCanil%20de%20Rottweiler%20-%20Canil%20Von%20Olivio!5e0!3m2!1spt-BR!2sbr!4v1717690000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa Canil Von Olivio"
+            ></iframe>
           </div>
         </div>
       </section>

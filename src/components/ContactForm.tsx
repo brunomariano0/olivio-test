@@ -15,32 +15,41 @@ const ContactForm: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-  
-    try {
-      const response = await fetch('http://localhost:5000/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-  
-      if (response.ok) {
-        alert('Mensagem enviada com sucesso!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-      } else {
-        alert('Erro ao enviar. Tente novamente.');
-      }
-    } catch (err) {
-      console.error(err);
-      alert('Erro na conexão com o servidor.');
-    }
+  e.preventDefault();
+
+  // Ajuste os nomes dos campos para o backend
+  const payload = {
+    nome: formData.name,
+    email: formData.email,
+    mensagem: formData.message,
+    subject: formData.subject,
+    // Se quiser enviar phone e subject, adicione no backend também
   };
+
+  try {
+    const response = await fetch('http://localhost:3000/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+
+    if (response.ok) {
+      alert('Mensagem enviada com sucesso!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } else {
+      alert('Erro ao enviar. Tente novamente.');
+    }
+  } catch (err) {
+    console.error(err);
+    alert('Erro na conexão com o servidor.');
+  }
+};
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">

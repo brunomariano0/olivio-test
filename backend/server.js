@@ -1,46 +1,50 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
 const cors = require('cors');
 
+dotenv.config();
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
 
-app.post('/send-email', async (req, res) => {
-  const { name, email, phone, subject, message } = req.body;
+app.post('/send', async (req, res) => {
+  const { nome, email, mensagem } = req.body;
+
+  if (!nome || !email || !mensagem) {
+    return res.status(400).json({ error: 'Todos os campos são obrigatórios.' });
+  }
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.seudominio.com.br', // Ex: smtp.seusite.com.br ou smtp.locaweb.com.br
-    port: 587,
-    secure: false,
+    host: process.env.EMAIL_HOST,
+    port: process.env.EMAIL_PORT,
+    secure: true, // porta 465 = true
     auth: {
-      user: 'seuemail@seudominio.com.br',
-      pass: 'SUA_SENHA_AQUI',
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
-    from: 'seuemail@seudominio.com.br',
-    to: 'seuemail@seudominio.com.br',
-    subject: `Mensagem do site - ${subject}`,
-    html: `
-      <h3>Nova mensagem de contato</h3>
-      <p><strong>Nome:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Telefone:</strong> ${phone}</p>
-      <p><strong>Assunto:</strong> ${subject}</p>
-      <p><strong>Mensagem:</strong><br/>${message}</p>
+    from: `"${nome}" <${process.env.EMAIL_USER}>`,
+    to: process.env.EMAIL_USER,
+    subject: 'Nova mensagem do site',
+    text: `
+      Nome: ${nome}
+      E-mail: ${email}
+      Mensagem:
+      ${mensagem}
     `,
   };
 
   try {
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Email enviado com sucesso!' });
+    res.status(200).json({ message: 'E-mail enviado com sucesso via Locaweb!' });
   } catch (error) {
-    console.error('Erro ao enviar:', error);
-    res.status(500).json({ message: 'Erro ao enviar e-mail.' });
+    console.error('Erro ao enviar e-mail:', error);
+    res.status(500).json({ error: 'Erro ao enviar e-mail.' });
   }
 });
 

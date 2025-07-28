@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
             <NavLink to="/contact" className="font-medium hover:text-primary transition-colors">Contato</NavLink>
             <a href="/store" className="btn btn-primary flex items-center justify-center">
               <ShoppingCart size={18} className="mr-2" />
-              <span>Store</span>
+              <span>Em Breve</span>
             </a>
           </div>
           

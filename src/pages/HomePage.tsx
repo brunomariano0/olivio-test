@@ -35,85 +35,7 @@ const HomePage: React.FC = () => {
 
     
     <div>
-      {/* Store Announcement Modal */}
-      {showStoreModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-          <div className="bg-white rounded-xl shadow-2xl w-full max-w-2xl transform transition-all">
-            <div className="p-8">
-              <div className="flex justify-between items-center mb-6">
-                <div className="flex items-center">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <ShoppingBag className="text-primary" size={28} />
-                  </div>
-                  <div className="ml-4">
-                    <h2 className="text-3xl font-bold text-primary">Nova Loja Virtual!</h2>
-                    <p className="text-gray-600">Produtos exclusivos para seu Rottweiler</p>
-                  </div>
-                </div>
-                <button 
-                  onClick={() => setShowStoreModal(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
-                >
-                  <X size={24} />
-                </button>
-              </div>
-              
-              <div className="mb-8">
-                <p className="text-lg text-gray-700 mb-6">
-                  Estamos muito felizes em anunciar nossa nova loja virtual com produtos selecionados especialmente para você!
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-start space-x-3">
-                    <Package className="text-primary mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Produtos Premium</h4>
-                      <p className="text-sm text-gray-600">Rações e acessórios de alta qualidade</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Truck className="text-primary mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Entrega Segura</h4>
-                      <p className="text-sm text-gray-600">Enviamos para todo Brasil</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CreditCard className="text-primary mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Pagamento Facilitado</h4>
-                      <p className="text-sm text-gray-600">Parcele suas compras</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Star className="text-primary mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Produtos Exclusivos</h4>
-                      <p className="text-sm text-gray-600">Itens selecionados para seu pet</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex justify-end gap-4">
-                <button 
-                  onClick={() => setShowStoreModal(false)}
-                  className="px-6 py-2 text-gray-600 hover:text-gray-800 transition-colors"
-                >
-                  Fechar
-                </button>
-                <a 
-                  href="/store" 
-                  className="btn btn-primary flex items-center gap-2"
-                >
-                  <Gift size={20} />
-                  Visitar Loja
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      
 
       {/* Hero Section */}
       <section className="relative h-screen">
@@ -319,18 +241,18 @@ const HomePage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">RESERVAS ABERTAS</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">RESERVAS EM BREVE</h3>
                   <div className="h-1 w-20 bg-primary rounded-full mb-4"></div>
                 </div>
                 
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Calendar className="text-primary" size={20} />
-                    <p className="text-gray-700">Nascimento: 10/12/2024</p>
+                    <p className="text-gray-700">EM BREVE</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="text-primary" size={20} />
-                    <p className="text-gray-700">Pais: Orion x Radissa</p>
+                    <p className="text-gray-700">EM BREVE</p>
                   </div>
                 </div>
 
@@ -354,8 +276,8 @@ const HomePage: React.FC = () => {
                   alt="Radissa" 
                   className="w-full rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
                 />
-                <p className="text-center text-sm font-medium text-gray-600">ORION</p>
-                <p className="text-center text-sm font-medium text-gray-600">RADISSA</p>
+                <p className="text-center text-sm font-medium text-gray-600">-</p>
+                <p className="text-center text-sm font-medium text-gray-600">-</p>
               </div>
             </div>
           </div>
