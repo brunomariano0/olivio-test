@@ -60,9 +60,10 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-1">Horário de Atendimento</h3>
-                    <p className="text-gray-600">Segunda - Sexta: 8:00 - 18:00</p>
-                    <p className="text-gray-600">Sábado: 9:00 - 15:00</p>
-                    <p className="text-gray-600">Domingo: Fechado</p>
+                    <p className="text-gray-600">Segunda - Sexta: 07:00 - 17:00</p>
+                    <p className="text-gray-600">Sábado: 07:00 - 17:00</p>
+                    <p className="text-gray-600">Domingo: 07 - 17:00</p>
+                    <p className="text-gray-600">Visitas ao nosso canil mediante agendamento prévio.</p>
                   </div>
                 </div>
               </div>
@@ -71,21 +72,21 @@ const ContactPage: React.FC = () => {
                 <h3 className="text-xl font-bold mb-4">Siga-nos nas Redes Sociais</h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://facebook.com" 
+                    href="https://www.facebook.com/canilvonolivio2015/?locale=pt_BR" 
                     className="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     aria-label="Facebook"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                   </a>
                   <a 
-                    href="https://instagram.com" 
+                    href="https://www.instagram.com/canilvonolivio.rottweiler/" 
                     className="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     aria-label="Instagram"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                   </a>
                   <a 
-                    href="https://youtube.com" 
+                    href="https://www.youtube.com/channel/UCQW398fejUYlt7eb1iCXPxg" 
                     className="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                     aria-label="YouTube"
                   >
@@ -141,8 +142,7 @@ const ContactPage: React.FC = () => {
               <h3 className="text-lg font-bold mb-3">Como reservar um filhote?</h3>
               <p className="text-gray-600">
                 Para reservar um filhote, entre em contato conosco por telefone ou email. Informaremos 
-                sobre ninhadas disponíveis ou previstas e o processo de reserva, que inclui um contrato 
-                e um depósito de 30% do valor total.
+                sobre ninhadas disponíveis ou previstas e o processo de reserva.
               </p>
             </div>
             
@@ -166,8 +166,7 @@ const ContactPage: React.FC = () => {
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-bold mb-3">Vocês oferecem garantias de saúde?</h3>
               <p className="text-gray-600">
-                Sim, oferecemos garantia de saúde de 15 dias para doenças infecciosas e 12 meses para 
-                doenças genéticas hereditárias, conforme os termos detalhados em nosso contrato.
+                Sim, oferecemos garantia de saúde conforme os termos detalhados em nosso contrato.
               </p>
             </div>
             
