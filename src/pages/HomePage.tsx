@@ -54,10 +54,10 @@ const HomePage: React.FC = () => {
               Canil Von Olivio
             </h1>
             <h2 className="text-2xl md:text-3xl text-accent font-bold mb-6">
-              Melhor Criador da Raça Rottweiler - 2002 a 2022
+              Melhor Criador da Raça Rottweiler - 2002 a 2025 * Até a data de hoje.
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto md:mx-0">
-              Há mais de 20 anos criando exemplares superiores com genética comprovada, 
+              Há mais de 23 anos criando exemplares superiores com genética comprovada, 
               temperamento equilibrado e saúde garantida.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-secondary p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-2">20+ Anos</h3>
+                <h3 className="text-xl font-bold mb-2">23+ Anos</h3>
                 <p>de Excelência em Criação</p>
               </div>
             </div>
@@ -339,28 +339,28 @@ const HomePage: React.FC = () => {
               <img 
                 src={Royal} 
                 alt="Royal Canin" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-16 object-contain grayscale"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Msd}
                 alt="MSD Saúde Animal" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-16 object-contain grayscale"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Bravecto} 
                 alt="Bravecto" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-16 object-contain grayscale"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Vetnil} 
                 alt="Vetnil" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-16 object-contain grayscale"
               />
             </div>
           </div>
