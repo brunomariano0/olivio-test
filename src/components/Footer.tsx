@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
-import Logo from './Logo';
+import Logo from '../img/Logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* About */}
           <div>
-            <Logo className="h-20 w-auto mb-4" />
+            <img src={Logo} alt="Logo" className="h-20 w-auto mb-4" />
             <p className="mb-4 text-gray-300">
               Especialistas em criação da raça Rottweiler desde 2002, com foco em qualidade, saúde e temperamento equilibrado.
             </p>
@@ -62,8 +62,9 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Clock size={20} className="mr-3 mt-1 text-accent" />
                 <div>
-                  <p>Segunda - Sexta: 8:00 - 18:00</p>
-                  <p>Sábado: 9:00 - 15:00</p>
+                  <p>Segunda - Sexta: 07:00 - 17:00</p>
+                  <p>Sábado: 07:00 - 17:00</p>
+                  <p>Domingo: 07:00 - 17:00</p>
                 </div>
               </li>
             </ul>

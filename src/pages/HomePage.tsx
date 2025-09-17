@@ -6,10 +6,8 @@ import DogCard from '../components/DogCard';
 import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
 import LitterCard from '../components/LitterCard';
-import { ShoppingBag, X, Package, Truck, CreditCard, Gift, Star } from 'lucide-react';
-import { Calendar, User, Phone } from 'lucide-react';
+import { Calendar, Phone } from 'lucide-react';
 
-import Dog from '../img/rottweiler.jpg';
 import Jester from '../img/Jester.jpg';
 import Quex from '../img/Quex.jpg';
 import Amy from '../img/Amy.jpg';
@@ -23,14 +21,70 @@ import Vetnil from '../img/Vetnil.png';
 import Canil from '../img/canil.jpg';
 
 import { useState, useEffect } from 'react';
-import { getLatestLitter } from '../data/litters';
+
+type LatestLitter = {
+  id: string;
+  name: string;
+  parents: { father: string; mother: string };
+  birthDate: string;
+  status: 'available' | 'reserved' | 'sold';
+  images: string[];
+  description: string;
+};
 
 const HomePage: React.FC = () => {
-  const [showStoreModal, setShowStoreModal] = useState(false);
-  const [latestLitter, setLatestLitter] = useState(getLatestLitter());
+  const [latestLitter, setLatestLitter] = useState<LatestLitter | null>(null);
 
   useEffect(() => {
-    setShowStoreModal(true);
+    // Carregar cães e ninhadas para compor a última ninhada automaticamente
+    const loadData = async () => {
+      try {
+        const [littersRes, dogsRes] = await Promise.all([
+          fetch('/ninhada.json'),
+          fetch('/dogs-v2.json')
+        ]);
+
+        const littersJson = await littersRes.json();
+        const dogsJson = await dogsRes.json();
+
+        const dogsArray = dogsJson[2].data.map((dog: any) => ({
+          id: String(dog.id),
+          name: dog.nome,
+          image: `https://canilvonolivio.com.br/fotos/${dog.imagem}`,
+        }));
+        const dogById: Record<string, { name: string; image: string }> = {};
+        dogsArray.forEach((d: any) => { dogById[d.id] = { name: d.name, image: d.image }; });
+
+        const litters = [...littersJson[2].data].sort((a: any, b: any) => Number(b.id) - Number(a.id));
+        const latest = litters[0];
+        if (!latest) {
+          setLatestLitter(null);
+          return;
+        }
+
+        const father = dogById[String(latest.idpai)]?.name || '-';
+        const mother = dogById[String(latest.idmae)]?.name || '-';
+        const fatherImg = dogById[String(latest.idpai)]?.image;
+        const motherImg = dogById[String(latest.idmae)]?.image;
+
+        const composed: LatestLitter = {
+          id: String(latest.id),
+          name: `Ninhada ${father} x ${mother}`,
+          parents: { father, mother },
+          birthDate: latest.nascimento || '-',
+          status: 'available',
+          images: [fatherImg, motherImg].filter(Boolean) as string[],
+          description: latest.descricao || 'Filhotes disponíveis. Entre em contato para saber mais.'
+        };
+
+        setLatestLitter(composed);
+      } catch (err) {
+        console.error('Erro ao carregar ninhada para Home:', err);
+        setLatestLitter(null);
+      }
+    };
+
+    loadData();
   }, []);
 
   return (
@@ -241,7 +295,7 @@ const HomePage: React.FC = () => {
           </p>
           
           {latestLitter ? (
-            <LitterCard litter={latestLitter} />
+            <LitterCard litter={latestLitter as any} />
           ) : (
             <div className="bg-white/95 p-8 rounded-xl max-w-3xl mx-auto mb-8 shadow-2xl">
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -339,28 +393,28 @@ const HomePage: React.FC = () => {
               <img 
                 src={Royal} 
                 alt="Royal Canin" 
-                className="h-16 object-contain grayscale"
+                className="h-16 object-contain "
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Msd}
                 alt="MSD Saúde Animal" 
-                className="h-16 object-contain grayscale"
+                className="h-16 object-contain "
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Bravecto} 
                 alt="Bravecto" 
-                className="h-16 object-contain grayscale"
+                className="h-16 object-contain "
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src={Vetnil} 
                 alt="Vetnil" 
-                className="h-16 object-contain grayscale"
+                className="h-16 object-contain "
               />
             </div>
           </div>

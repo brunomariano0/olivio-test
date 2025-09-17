@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       
       {/* Award Banner */}
       <div className="bg-accent text-secondary font-medium text-center py-1 px-4">
-        <p>MELHOR CRIADOR DA RAÇA ROTTWEILER - 2002 A 2022</p>
+        <p>MELHOR CRIADOR DA RAÇA ROTTWEILER - 2002 A 2025</p>
       </div>
       
       {/* Main Navigation */}
