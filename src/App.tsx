@@ -7,6 +7,9 @@ import DogsPage from './pages/DogsPage';
 import ServicesPage from './pages/ServicesPage';
 import LittersPage from './pages/LittersPage';
 import ContactPage from './pages/ContactPage';
+import AdminPage from './pages/AdminPage';
+import AdminDogsPage from './pages/AdminDogsPage';
+import AdminLittersPage from './pages/AdminLittersPage';
 import './App.css';
 
 function App() {
@@ -19,6 +22,12 @@ function App() {
         <Route path="services" element={<ServicesPage />} />
         <Route path="litters" element={<LittersPage />} />
         <Route path="contact" element={<ContactPage />} />
+      </Route>
+      
+      {/* Rotas de Administração */}
+      <Route path="/admin" element={<AdminPage />}>
+        <Route path="dogs" element={<AdminDogsPage />} />
+        <Route path="litters" element={<AdminLittersPage />} />
       </Route>
     </Routes>
   );

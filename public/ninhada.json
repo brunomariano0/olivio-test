@@ -1,11 +1,32 @@
 [
-    {"type":"header","version":"4.7.7","comment":"Export to JSON plugin for PHPMyAdmin"},
-    {"type":"database","name":"vonolivi_banco"},
-    {"type":"table","name":"ninhada","database":"vonolivi_banco","data":
-    [
-    {"id":"189","idpai":"338","idmae":"327","infadd":"<center>\r\n<h2>Compre hoje mesmo o seu <a href=\"https:\/\/canilderottweiler.com.br\/\">Filhote de Rottweiler<\/a>. Despachamos para todo Brasil<\/h2>\r\n<N>\r\nRESERVAS ABERTAS <BR>\r\nNASC: 12\/04\/25 <BR>\r\n<\/N>\r\nPARA MAIORES INFORMACÕES<BR>\r\n11-99442.4033 (REGINALDO)","descricao":null,"foto_copy10":"","foto_copy9":"","foto_copy8":"","foto_copy7":"","foto_copy6":"","foto_copy5":"","foto_copy4":"","foto_copy3":"","foto_copy2":"","foto_copy1":""},
-    {"id":"191","idpai":"279","idmae":"333","infadd":"<center>\r\n<h2>Compre hoje mesmo o seu <a href=\"https:\/\/canilderottweiler.com.br\/\">Filhote de Rottweiler<\/a>. Despachamos para todo Brasil<\/h2>\r\n<N>\r\nRESERVAS ABERTAS <BR>\r\nNASC: 01\/07\/25 <BR>\r\n<\/N>\r\nPARA MAIORES INFORMACÕES<BR>\r\n11-99442.4033 (REGINALDO)","descricao":null,"foto_copy10":"","foto_copy9":"","foto_copy8":"","foto_copy7":"","foto_copy6":"","foto_copy5":"","foto_copy4":"","foto_copy3":"","foto_copy2":"","foto_copy1":""}
+  {
+    "type": "header",
+    "version": "4.7.7",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  {
+    "type": "database",
+    "name": "vonolivi_banco"
+  },
+  {
+    "type": "table",
+    "name": "ninhada",
+    "database": "vonolivi_banco",
+    "data": [
+      {
+        "idpai": "341",
+        "idmae": "32",
+        "infadd": "",
+        "descricao": "Compre hoje mesmo o seu Filhote de Rottweiler. Despachamos para todo Brasil\nRESERVAS ABERTAS\nNASC: 01/07/25\nPARA MAIORES INFORMACÕES\n11-99442.4033 (REGINALDO)",
+        "id": "194"
+      },
+      {
+        "idpai": "281",
+        "idmae": "145",
+        "infadd": "",
+        "descricao": "",
+        "id": "195"
+      }
     ]
-    }
-    ]
-    
+  }
+]
