@@ -66,7 +66,7 @@ const LittersPage: React.FC = () => {
         <div className="absolute inset-0 opacity-30">
           <img 
             src="/src/img/filhote.jpg" 
-            alt="Filhotes de Rottweiler" 
+            alt="Filhotes de Rottweile" 
             className="w-full h-full object-cover"
           />
         </div>
